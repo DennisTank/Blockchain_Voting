@@ -1,0 +1,5 @@
+{
+  "MainUrl": "http://localhost:3010",
+  "DIFFICULTY": 3,
+  "MINE_RATE": 3000
+}

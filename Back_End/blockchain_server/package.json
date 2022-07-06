@@ -1,0 +1,31 @@
+{
+  "name": "blockchain_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg -o build/app -t node14-win-x64 index.js",
+    "api-test": "SET HTTP_PORT=4000&&SET P2P_PORT=5000&&node index.js",
+    "api-test2": "SET HTTP_PORT=4001&&SET P2P_PORT=5001&&node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "cakebase": "^3.0.1",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "cryptr": "^6.0.2",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.3",
+    "get-port-sync": "^1.0.1",
+    "readline-sync": "^1.4.10",
+    "stellar-keypair-from-seed": "^1.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.5.0"
+  }
+}
